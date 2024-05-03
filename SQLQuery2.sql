@@ -47,6 +47,11 @@ FROM TargetCorporation..order_items;
 SELECT COUNT(order_item_id) AS [TOTAL ORDERS]
 FROM TargetCorporation..order_items;
 
+-- Profit
+SELECT SUM(price) AS revenue, SUM(freight_value) AS cost, 
+		((SUM(price)-SUM(freight_value))/SUM(price)) * 100 AS profit
+FROM TargetCorporation..order_items;
+
 --Maximum Price and Freight Price group by	shipping limit
 SELECT shipping_limit_date, MAX(price) AS maximum_price, MAX(freight_value) AS maximum_freight_value
 FROM TargetCorporation..order_items
@@ -58,7 +63,6 @@ SELECT shipping_limit_date, SUM(price) AS total_price, SUM(freight_value) AS tot
 FROM TargetCorporation..order_items
 GROUP BY shipping_limit_date
 ORDER BY shipping_limit_date;
-
 
 -- Payments
 
