@@ -9,7 +9,7 @@ Target is a globally renowned brand and a prominent retailer in the United State
 
 This particular business case focuses on the operations of Target in Brazil and provides insightful information about 100,000 orders placed between 2016 and 2018. The dataset offers a comprehensive view of various dimensions including the order status, price, payment and freight performance, customer location, product attributes, and customer reviews.
 
-### Datasets
+## Datasets
 The data is available in 8 Excel files are:
 
 1. [customer.xlsx](data/customers.xlsx)
@@ -89,11 +89,11 @@ The column decription of each excel file is given below:
     - *seller_city*: Name of the City of the seller
     - *seller_state*: State Code (Eg. São Paulo - SP)
 
-#### Dataset Schema:
+### Dataset Schema:
 
 ![schema](uploads/schema.png)
 
-### Technologies used:
+## Technologies used:
  * `Python`
  * `SQL Server Management Studio`
  * `Tableau`
@@ -105,7 +105,7 @@ The column decription of each excel file is given below:
 Analyze the given dataset to extract valuable insights and provide actionable recommendations.
 
 
-##### Insights:
+#### Insights:
 - There were total of 99,441 customers.
 - There were 96,096 unique customer id.
 - The customers were from 4,119 different cities of 27 states of Brazil.
@@ -123,3 +123,24 @@ Analyze the given dataset to extract valuable insights and provide actionable re
 - Their were `96478` orders *delivered*, `1107` orders *shipped*, `625` orders *cancelled*, and `609` *unavailable* oreds.
 - `32211` orders were purchased in *Afternoon (12:00-17:00)*. Followed by `30311` in *Evening (17:00-22:00)*, `22906` in Morning (3:00-12:00) and `14013` in *Night (22:00-3:00)*.
 - In the 25 months period, `88649` orders were delivered before estimated time, `1292` were delivered on the estimated time, and `6535` were delayed.
+- Earliest order was shipped on `2016-09-19 00:15:34`
+- In *2016* `370` orders were shipped, followed by `49765` in *2017*, `62511` in *2018*, and `4` in *2020*.
+- Total products ordered during these period were `32951`.
+- `57328` reviewers rated *5*, `19142` rated *4*, `8179` rated *3*, `3151` rated *2*, and `11424` rated *1*.
+- The mean review score was `4.086`, and the median review score was `5`.
+- The average time taken to reply to a review was `3 days 03:34:03.59`.
+- `76795` payments were made through *credit card*, `19784` were made through *UPI*, `5775` were made through *voucher*, `1529` were made through *debit card*, and `3` payments were not defined.
+- Apart from *miscellaneous*, *home and garden* category had the most products, followed by *beauty and health*, *furniture*, *fashion*, and so on.
+- The total revenue generated is `$13591643.7` (in BLR).
+- Maximum revenue was generated in the year *2018* with `$7386050.80`(in BLR), with `61416` orders purchased.
+- The revenue increases by `19.99%` from year *2017* to *2018*.
+- *São Paulo* generates `64.40%` of the revenue. All the other states generates revenue in a single digit.
+- *Rondônia* has the highest freight value of `50.91`. While the *São Paulo* has the lowest freight value of `18.45`.
+
+
+#### Visualizations
+
+##### Order Purchased by Month and Year:
+![](uploads/Order_Purchased_by_Month_and_Year.png)
+
+* 
