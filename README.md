@@ -143,4 +143,4 @@ Analyze the given dataset to extract valuable insights and provide actionable re
 ##### Order Purchased by Month and Year:
 ![](uploads/Order_Purchased_by_Month_and_Year.png)
 
-* 
+* The puchase show an increasing trend with the meximum purchase in `November 2017`. There's a sudden decrease for a month. There were many ups and downs in the year `2018`, but has the best overall sales. Followed by a rapid fall in sales in `September 2018`.
