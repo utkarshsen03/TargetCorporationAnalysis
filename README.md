@@ -9,6 +9,8 @@ Target is a globally renowned brand and a prominent retailer in the United State
 
 This particular business case focuses on the operations of Target in Brazil and provides insightful information about 100,000 orders placed between 2016 and 2018. The dataset offers a comprehensive view of various dimensions including the order status, price, payment and freight performance, customer location, product attributes, and customer reviews.
 
+---
+
 ## Datasets
 The data is available in 8 Excel files are:
 
@@ -101,6 +103,8 @@ The column decription of each excel file is given below:
 **Dashboard:**
 ![dashboard](Target_Corporation_Dashboard.png)
 
+***
+
 ## Problem statement
 Analyze the given dataset to extract valuable insights and provide actionable recommendations.
 
@@ -136,6 +140,8 @@ Analyze the given dataset to extract valuable insights and provide actionable re
 - The revenue increases by `19.99%` from year *2017* to *2018*.
 - *São Paulo* generates `64.40%` of the revenue. All the other states generates revenue in a single digit.
 - *Rondônia* has the highest freight value of `50.91`. While the *São Paulo* has the lowest freight value of `18.45`.
+- There is no correlation between price and review score.
+
 
 
 #### Visualizations
@@ -144,3 +150,53 @@ Analyze the given dataset to extract valuable insights and provide actionable re
 ![](uploads/Order_Purchased_by_Month_and_Year.png)
 
 * The puchase show an increasing trend with the meximum purchase in `November 2017`. There's a sudden decrease for a month. There were many ups and downs in the year `2018`, but has the best overall sales. Followed by a rapid fall in sales in `September 2018`.
+
+
+##### Shipments by Month and Year:
+![](uploads/Shipments_by_Month_and_Year.png)
+
+* Shipment shows the similar trend as order purchased.
+
+
+
+**Inference:** Target Corporation went into serious troubles after The August of 2018.
+
+##### Payment Methods Used
+![](uploads/payment_method.png)
+
+* `73.9%` of payments were made through credit card, while only `1.47%` used debit card.
+
+##### Installments V/S Price
+![](uploads/Installments_and_Price.png)
+
+* If the price of the product was above *$500(in BLR)*, it people paid either in `20 or 24 installments`.
+
+##### Different products available
+![](uploads/different_products_available.png)
+
+##### Revenue Generated in each year
+![](uploads/revenue_generated_in_each_year.png)
+
+* Not much data was available to analyse revenue in the year `2016`
+* `2017` shows an increasing trend in the revenue generation with `November` being the best year, and a sudden decrease in the `December`
+* `November` can be the month with seasonal sale. But not much data is avaiable to prove it.
+* `2018` had a great start with months `March`,`April` and `May` generating the highest revenue. There wasa a slight decrease after this period.
+* The company managed a steady revenue for few more months after completely collapsing after `August 2018`.
+
+
+##### Rolling average by Quarter of Months
+![](uploads/rolling_average_by_quarter.png)
+
+* Rolling average also shows the similar trend. Target Corporation Performed steadily the `August 2018` and then completely collapsing after that.
+
+#### What happened after August 2018?
+1. Target Corporation was performing very well till *August 2018*.
+2. In August month, it sold `6512` products.
+3. But then there was a sudden fall in sales.
+4. A major reason for this decline could be the delay in product delivery. Out of `6535` delayed deliveries, `4079` was from the year *2018*.
+
+## Recommendations
+- The average time taken to deliver an order is `12 days 13:24:31`. Reducing is very important because of the high competition in e-commerce market.
+- In order to do this, the average time taken to approve the order (`10:25:08`), and the average time taken to reach the carrier after approving the order (`2 days 19:19:15`), should be optimized.
+- There are very few customers(`5%`) from North Brazil. Increasing network in North Brazil may create new customers. As North Brazil has the worlds largest river and most extesive rain forest, must be a good travel destination, introducing necessary survival/ camping/adventure products can help increase revenue and order from northen region.
+- There were many delayed deliveries in the year 2018. Target Corporation should focus on optimizing it's delivery system.
